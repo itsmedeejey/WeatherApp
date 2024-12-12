@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(82, 82, 82);
+    color: white;
+    margin: 0;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+ 
+    background: linear-gradient(to bottom ,#222b35, #96aed1 );
+}
+.container {
+
+  position: absolute;
+  top: 100px;
+  min-width: 316px;
+  max-width: 400px;
+  max-height: 600px;
+  margin: 0 auto;
+  
+  
+  box-shadow: 8px 8px px rgba(0, 0, 0, 0.493);
+    background: linear-gradient(to bottom ,#222b35, #96aed1 );
+    padding: 10px 10px 10px;
+  padding: 20px;
+  border-radius: 10px;
+
+
+
+
+
+  transform:
+    perspective(1000px)
+    rotateX(50deg)
+    scale(0.8);
+  box-shadow: 0px 20px 100px #555;
+  transition:0.5s ease all;
+
+  &:hover {
+    transform:
+      rotate(0deg)
+      scale(1)
+      translateY(10px);
+  }
+
+
+
+
+}
+.error {
+  margin-top:0px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  text-align: left;
+  font-size: 14px;
+  display: none;
+}
+.error p{
+  margin-top:0px;
+  margin-bottom: 0px;
+  text-align: left;
+  font-size: 14px;
+}
+.search-box{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+ button {
+    font-size: 13px;
+    color: whitesmoke;
+    padding: 10px 10px 10px;
+    background:none;
+    margin-right: 30px ;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    border: 0px;
+    cursor: pointer;
+
+}
+button img{
+
+  width: 30px;
+  margin: 0;
+
+}
+input{
+    font-size: 15px;
+    background: #ffffffd6; 
+    color: black;
+    padding: 10px;
+    margin: 5px 0;
+    max-width:370px;
+    min-width: 210px;
+    margin-left: 30px;
+    border-radius: 15px;
+    border: 0px;
+    outline: none;
+  }
+#display-weather h2{
+ margin: 0%;
+ 
+}
+.details{
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  
+}
+.details p{
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin: 0 ;
+}
+.temp{
+  margin: 0%;
+  font-size: 45px;
+}
+.city-name{
+  margin: 0%;
+  font-size: 28px;
+}
+
+#display-weather .weather{
+  width: 120px;
+}
+#display-weather .humidity-img{
+  width: 90px;
+  
+}
+#display-weather .wind-img{
+  width: 90px;
+}
+
+#display-weather{
+  display: none;
+}
+
+
+@media screen  and (max-width: 600px){
+  
+  .container{
+    max-width: 300px;
+    min-width: 250px;
+  }
+}
